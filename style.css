@@ -1,16 +1,24 @@
 /* Basic Reset */
 * {
-    margin: 15;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 18px; /* Larger font size for better readability */
+    font-size: 1.125rem; /* Larger font size for better readability */
     line-height: 1.6; /* Improved line spacing */
     color: #333; /* High contrast text */
     background-color: #FFF; /* Light background */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%; /* Adjust as needed */
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center align with auto margins */
 }
 
 a {
@@ -51,7 +59,7 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-    font-size: 1em;
+    font-size: 1rem;
     padding: 10px 20px;
     color: #FFF;
     background-color: #007BFF;
@@ -72,7 +80,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
-    font-size: 1em;
+    font-size: 1rem;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -106,6 +114,10 @@ textarea:focus {
 /* Responsive Media Queries */
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* Slightly smaller font for mobile devices */
+        font-size: 1rem; /* Slightly smaller font for mobile devices */
+    }
+
+    .container {
+        width: 90%; /* Adjust for mobile devices */
     }
 }
