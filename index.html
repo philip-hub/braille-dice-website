@@ -1,111 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Affordable 3D Printed Braille Dice with Fast Shipping for Blind Gamers">
-    <meta name="keywords" content="Braille Dice, 3D Printed Dice, Affordable Dice, Fast Shipping, Accessible Gaming">
-    <meta name="keywords" content="Braille dice, Accessible gaming dice, Dice for visually impaired, Braille board games accessories, Tactile gaming dice, Inclusive gaming supplies, Braille RPG dice, Braille D&D dice, 3D printed Braille dice, Educational Braille tools, Accessible tabletop games, Braille products for blind, Adaptive gaming equipment, Braille game accessories, Low vision board games, Custom Braille dice, Affordable Braille dice, Braille dice for sale, Fast shipping Braille dice, Braille gaming store">
-    <title>3D Printed Braille Dice for Blind Gamers | Fast Shipping & Affordable Prices</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Schema.org for Rich Snippets -->
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Product",
-        "name": "3D Printed Braille Dice",
-        "image": "image-link.jpg",
-        "description": "High-quality 3D printed Braille dice, perfect for blind gamers. Get more for less with our bulk discounts and enjoy fast shipping.",
-        "brand": "YourBrand",
-        "offers": {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "price": "10.00",
-            "availability": "http://schema.org/InStock"
-        }
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.125rem; /* Larger font size for better readability */
+    line-height: 1.6; /* Improved line spacing */
+    color: #333; /* High contrast text */
+    background-color: #FFF; /* Light background */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%; /* Adjust as needed */
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center align with auto margins */
+}
+
+a {
+    color: #0000EE; /* Standard, high-contrast link color */
+    text-decoration: underline; /* Underline links for better visibility */
+}
+
+a:hover,
+a:focus {
+    color: #FF0000; /* Change color on hover/focus for better visibility */
+}
+
+/* Headings for clear section demarcation */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+    color: #000; /* High contrast for headings */
+    font-weight: bold;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove gaps in borders */
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: 1px solid #000; /* High contrast borders */
+    padding: 0.5em; /* Padding for cell content */
+}
+
+th {
+    background-color: #EEE; /* Light grey background for headers */
+}
+
+/* Buttons and Input Forms */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* Form Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+}
+
+/* Accessibility Enhancements */
+:focus {
+    outline: 3px solid #007BFF; /* High visibility focus outline */
+}
+
+/* Screen Reader Only Content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem; /* Slightly smaller font for mobile devices */
     }
-    </script>
-</head>
-<body>
-    <header>
-        <h1>3D Printed Braille Dice</h1>
-        <nav>
-            <!-- Navigation Links -->
-        </nav>
-    </header>
 
-    <main>
-        <section id="product-intro">
-            <h2>Braille Dice for Blind Gamers</h2>
-            <center>
-            <img src="dice.png" width="50%" height="50%">
-            </center>
-            <p>3D printed 6 sided standard Braille dice. Designed for blind gamers, these dice are easy to read and have the numeric numbers printed on the side for your friends not fluent in braille.  Each dice is half inch cube.<br>
-            <br> I made these because another company charged me $20 for a single dice plus $20 dollars for shipping, which is insulting when these can easily be 3D printed.</p>
-            <!-- Product Images -->
-        </section>
-
-        <section id="pricing">
-            <h2>Pricing</h2>
-            
-            <table border="1">
-               
-                <thead>
-                    <tr>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>Buy Now</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>5 Dice</td>
-                        <td>$10</td>
-                        <td>        <center></section>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                          <input type="hidden" name="cmd" value="_s-xclick" />
-                          <input type="hidden" name="hosted_button_id" value="HDYL6LXEPLDGG" />
-                          <input type="hidden" name="currency_code" value="USD" />
-                          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
-                        </form>
-                        </center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>10 Dice</td>
-                        <td>$15</td>
-                        <td>
-                            <center>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                          <input type="hidden" name="cmd" value="_s-xclick" />
-                          <input type="hidden" name="hosted_button_id" value="MS8AV4QXX499E" />
-                          <input type="hidden" name="currency_code" value="USD" />
-                          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
-                        </form>
-                            </center>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </section>
-
-        <section id="shipping">
-            <h2>Free United States Postage</h2>
-            
-            <!-- Shipping Information -->
- 
-
-        <!-- <section id="reviews">
-            <h2>Customer Reviews</h2>
-            <p>Don't just take our word for it. See what our customers have to say.</p>
-            <!-- Reviews -->
-        <!-- </section> -->
-    </main>
-
-    <footer>
-        <p>&trade; 2023 All rights reserved.</p>
-        <!-- Footer Links -->
-    </footer>
-</body>
-</html>
+    .container {
+        width: 90%; /* Adjust for mobile devices */
+    }
+}
