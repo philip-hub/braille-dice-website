@@ -1,0 +1,111 @@
+/* Basic Reset */
+* {
+    margin: 15;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Larger font size for better readability */
+    line-height: 1.6; /* Improved line spacing */
+    color: #333; /* High contrast text */
+    background-color: #FFF; /* Light background */
+}
+
+a {
+    color: #0000EE; /* Standard, high-contrast link color */
+    text-decoration: underline; /* Underline links for better visibility */
+}
+
+a:hover,
+a:focus {
+    color: #FF0000; /* Change color on hover/focus for better visibility */
+}
+
+/* Headings for clear section demarcation */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+    color: #000; /* High contrast for headings */
+    font-weight: bold;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove gaps in borders */
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: 1px solid #000; /* High contrast borders */
+    padding: 0.5em; /* Padding for cell content */
+}
+
+th {
+    background-color: #EEE; /* Light grey background for headers */
+}
+
+/* Buttons and Input Forms */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* Form Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+}
+
+/* Accessibility Enhancements */
+:focus {
+    outline: 3px solid #007BFF; /* High visibility focus outline */
+}
+
+/* Screen Reader Only Content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Slightly smaller font for mobile devices */
+    }
+}
